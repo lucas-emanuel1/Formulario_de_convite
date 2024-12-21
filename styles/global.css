@@ -45,3 +45,48 @@
   --body-sm: 600 .875rem var(--font-family-tertiary);
   --body-xs: 600 .75rem var(--font-family-tertiary);
 }
+
+body {
+  padding: 1.25rem;
+  height: 100dvh;
+  background: var(--shape-background) no-repeat center;
+  background-size: cover;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+}
+
+.aside-apresentation {
+  background: url(../assets/Background.png) no-repeat center;
+  background-size: cover;
+  border-radius: .75rem;
+}
+
+.aside-apresentation,
+.aside-form {
+  padding: 2rem;
+}
+
+.aside-apresentation-content {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  max-width: fit-content;
+  
+  & svg {
+    margin-bottom: 1rem;
+  }
+
+  & h1 {
+    font: var(--logo);
+    color: var(--pink);
+  }
+
+  & p {
+    font: var(--body-md);
+    color: var(--text-heading);
+  }
+}
