@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--text-body);
 }
 
 :root {
@@ -38,7 +39,7 @@
 
   --font-family-secondary: 'Baloo 2';
   --heading-md: bold 1.75rem var(--font-family-secondary);
-  --heading-sd: bold 1.125rem var(--font-family-secondary);
+  --heading-sm: bold 1.125rem var(--font-family-secondary);
 
   --font-family-tertiary: 'Open Sans';
   --body-md: 600 1rem var(--font-family-tertiary);
@@ -59,7 +60,10 @@ body {
   height: 100%;
 }
 
-.aside-apresentation,
-.aside-form {
+.aside-apresentation {
   padding: 2rem;
+}
+
+.error {
+  display: none;
 }
