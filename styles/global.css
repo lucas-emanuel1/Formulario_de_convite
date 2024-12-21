@@ -59,34 +59,7 @@ body {
   height: 100%;
 }
 
-.aside-apresentation {
-  background: url(../assets/Background.png) no-repeat center;
-  background-size: cover;
-  border-radius: .75rem;
-}
-
 .aside-apresentation,
 .aside-form {
   padding: 2rem;
-}
-
-.aside-apresentation-content {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  max-width: fit-content;
-  
-  & svg {
-    margin-bottom: 1rem;
-  }
-
-  & h1 {
-    font: var(--logo);
-    color: var(--pink);
-  }
-
-  & p {
-    font: var(--body-md);
-    color: var(--text-heading);
-  }
 }
