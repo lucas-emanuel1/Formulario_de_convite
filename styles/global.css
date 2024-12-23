@@ -52,16 +52,19 @@ body {
   height: 100dvh;
   background: var(--shape-background) no-repeat center;
   background-size: cover;
+  overflow: hidden;
 }
 
 #main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   height: 100%;
+  overflow: hidden;
 }
 
 .aside-apresentation {
   padding: 2rem;
+  overflow: hidden;
 }
 
 .error {
