@@ -298,3 +298,16 @@ textarea {
   font: var(--body-sm);
   border-radius: 999px;
 }
+
+.contact {
+  border-bottom: 1px solid var(--input-stroke);
+}
+
+.flex-contact {
+  display: flex;
+  gap: 1rem;
+
+  & .input-wrapper {
+    flex-basis: 50%;
+  }
+}
