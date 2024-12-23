@@ -299,8 +299,12 @@ textarea {
   border-radius: 999px;
 }
 
-.contact {
-  border-bottom: 1px solid var(--input-stroke);
+.division {
+  display: block;
+  margin-block: 40px;
+  border: 1px solid var(--input-stroke);
+  width: 100%;
+  height: 1px;
 }
 
 .flex-contact {
@@ -309,5 +313,41 @@ textarea {
 
   & .input-wrapper {
     flex-basis: 50%;
+  }
+}
+
+.terms-and-others {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.terms-and-others div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  & svg {
+    display: none;
+  }
+
+  & .input-check {
+    position: relative;
+  }
+
+  & label a {
+    color: var(--brand-light);
+  }
+
+  & input:checked {
+    border: 1px solid var(--brand-light);
+
+    & + svg {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
