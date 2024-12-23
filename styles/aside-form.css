@@ -351,3 +351,23 @@ textarea {
     }
   }
 }
+
+.submit {
+  display: flex;
+  justify-content: flex-end;
+  margin: 48px 0 80px 0;
+  width: 100%;
+
+  & button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    border-radius: .5rem;
+    background: var(--brand-dark);
+    font: var(--body-sm);
+    color: var(--text-heading);
+    cursor: pointer;
+  }
+}
